@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(38, 33, 33);
+    padding: 20px 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    line-height: 30px;
+    flex-wrap: wrap;
+}
+
+header ul li a {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+header img {
+    height: 50px;
+    width: 50px;
+}
+
+
+/* section */
+
+section {
+    width: 100%;
+    padding: 100px 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url(background31.jpg);
+    opacity: 0.99;
+    font-family: 'Cormorant', serif;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgb(3 3 3 / 68%);
+    top: 0;
+    z-index: -1;
+}
+
+.sp {
+    margin: 100px 0;
+}
+
+section h2 {
+    font-size: 100px;
+    color: aliceblue;
+    text-align: left;
+}
+
+.sp h3 {
+    font-size: 100px;
+}
+
+
+/* our history */
+
+.our-history {
+    padding: 100px 0;
+    width: 100%;
+    background-color: black;
+}
+
+.history1 {
+    width: 100%;
+}
+
+.our-history h2 {
+    font-family: 'Cormorant', serif;
+    font-size: 60px;
+    margin: 25px 0
+}
+
+.our-history img {
+    width: 100%;
+}
+
+
+/* offer */
+
+.offer {
+    padding: 100px 0;
+    background-color: black;
+    width: 100%;
+}
+
+.offer img {
+    width: 100%;
+}
+
+.offer p {
+    margin: 15px 0;
+    position: relative;
+}
+
+.offer p::before {
+    content: "\f00c";
+    position: absolute;
+    left: -1.6rem;
+    top: 0.5rem;
+    font-family: 'Moririse2' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* services */
+
+.services {
+    width: 100%;
+    padding: 100px 0;
+    background-color: black;
+}
+
+.services .card {
+    background-color: transparent;
+    color: #fff;
+    border-left: 2px solid red;
+}
+
+.services a {
+    letter-spacing: 5px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.services h2 {
+    font-size: 35px;
+    font-family: 'Cormorant', serif;
+}
+
+
+/* team */
+
+.team {
+    padding: 100px 0;
+    width: 100%;
+    background-color: black;
+}
+
+
+/* @meadia */
+
+@media(max-width:500px) {
+    .sp h2 {
+        font-size: 50px;
+    }
+    .sp h3 {
+        font-size: 50px;
+    }
+}
